@@ -9,9 +9,9 @@ python:
   - "nightly" # currently points to 3.6-dev
 # command to install dependencies
 install:
+  - "apt-get install python-numpy python-scipy"
   - "pip install pytest-cov"
   - "pip install pytest-pep8"
-  - "pip install scipy"
   - "pip install coveralls"
   - "pip install ."
 # command to run tests
