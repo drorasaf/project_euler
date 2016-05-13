@@ -11,6 +11,7 @@ python:
 install:
   - "pip install pytest-cov"
   - "pip install pytest-pep8"
+  - "pip install scipy"
   - "pip install coveralls"
   - "pip install ."
 # command to run tests
