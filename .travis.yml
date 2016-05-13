@@ -1,3 +1,4 @@
+sudo : true
 language: python
 
 python:
@@ -9,7 +10,7 @@ python:
   - "nightly" # currently points to 3.6-dev
 # command to install dependencies
 install:
-  - "apt-get install python-numpy python-scipy"
+  - "sudo apt-get install python-numpy python-scipy"
   - "pip install pytest-cov"
   - "pip install pytest-pep8"
   - "pip install coveralls"
