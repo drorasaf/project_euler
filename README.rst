@@ -1,4 +1,5 @@
-# project_euler
+Project euler
+=============
 
 .. image:: https://api.travis-ci.org/drorasaf/project_euler.svg?branch=master
         :target: https://travis-ci.org/drorasaf/project_euler
