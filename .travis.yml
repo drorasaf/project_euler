@@ -13,13 +13,13 @@ before_install:
 # command to install dependencies
 install:
   - "conda install --yes python=$TRAVIS_PYTHON_VERSION numpy=1.10 scipy=0.17"
-  - "conda install --yes pytest-cov"
-  - "conda install --yes  pytest-pep8"
+  - "conda install --yes nose-cov"
+  - "conda install --yes tissue"
   - "pip install primesieve"
   - "pip install coveralls"
   - "pip install ."
 # command to run tests
 script:
-  - py.test --pep8 --cov=euler --cov-report term-missing
+  - nosetests --with-cov --with-tissue --cov=euler --cov-report term-missing
 after_success:
   - coveralls
