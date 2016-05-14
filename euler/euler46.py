@@ -51,5 +51,3 @@ def solution():
     """ Returns the answer as requested by the euler project problem """
     max_range = 10 ** 5
     return smallest_non_gb_odd_composite(max_range, 0)
-
-print(solution())

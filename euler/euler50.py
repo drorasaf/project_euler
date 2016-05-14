@@ -1,8 +1,6 @@
 import primesieve
 
 
-def primesum
-
 def cumulative_primes(max_range):
     primesum = primesieve.primesum(max_range)
 

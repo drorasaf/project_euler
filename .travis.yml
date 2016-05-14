@@ -9,13 +9,13 @@ python:
   - "3.5-dev" # 3.5 development branch
   - "nightly" # currently points to 3.6-dev
 before_install:
-  - if [ ${TRAVIS_PYTHON_VERSION:0:1} == "2" ]; then wget http://repo.continuum.io/miniconda/Miniconda-2.0.0-Linux-x86_64.sh -O miniconda.sh; fi
+  - wget http://repo.continuum.io/miniconda/Miniconda-2.0.0-Linux-x86_64.sh -O miniconda.sh;
   - chmod +x miniconda.sh
   - ./miniconda.sh -b
   - export PATH=/home/travis/anaconda/bin:$PATH
 # command to install dependencies
 install:
-  - conda install --yes -c python=$TRAVIS_PYTHON_VERSION numpy scipy
+  - "conda install --yes python=$TRAVIS_PYTHON_VERSION numpy scipy"
   - "conda install --yes pytest-cov"
   - "conda install --yes  pytest-pep8"
   - "conda install --yes primesieve"
