@@ -1,4 +1,7 @@
 import primesieve
+import logging
+
+log = logging.getLogger()
 
 
 def generate_primes_sum(primes_array):
@@ -12,6 +15,7 @@ def generate_primes_sum(primes_array):
 
 def search_cumulative_primes(max_range):
     """ Search for the first cumulative """ 
+    log.info("Start looking for cumulative primes: %d" % max_range)
     primes = primesieve.generate_primes(max_range)
     primesum = generate_primes_sum(primes)
     
