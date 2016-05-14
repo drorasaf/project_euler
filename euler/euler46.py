@@ -28,28 +28,28 @@ def smallest_non_gb_odd_composite(max_range, min_range):
         odd_num = min_range + 1
     else:
         odd_num = min_range
-    not_found = True
+    found = False
 
     prime_list = generate_primes(max_range, min_range)
 
-    while (odd_num < max_range) and not_found:
+    while (odd_num < max_range) and not found:
         odd_num += 2
         j = 0
 
-        not_found = False
+        found = True
         while (odd_num >= prime_list[j]):
             if is_int_twice_squared(odd_num - prime_list[j]):
-                not_found = True
+                found = False
                 break
             j += 1
 
-    log.info("not_found %d odd_num %d" % (not_found, odd_num))
-    return None if not_found else odd_num
+    log.info("found %d odd_num %d" % (found, odd_num))
+    return odd_num if found else None
 
 
 def solution():
     """ Returns the answer as requested by the euler project problem """
     max_range = 10 ** 5
-    smallest_non_gb_odd_composite(max_range, 0)
+    return smallest_non_gb_odd_composite(max_range, 0)
 
 print(solution())
