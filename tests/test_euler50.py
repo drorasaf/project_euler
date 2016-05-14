@@ -6,5 +6,11 @@ def test_primes_sum():
     assert primes_sum == [2, 5, 10, 17, 28, 41]
 
 
+def test_binary_search():
+    array = [1, 3, 5, 7, 10]
+    assert euler.binary_search(array, 5)
+    assert not euler.binary_search(array, 8)
+
+
 def test_solution():
     assert euler.solution() == 997651
