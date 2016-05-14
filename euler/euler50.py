@@ -5,4 +5,5 @@ def euler50():
 
 
 def solution():
+    """ Returns the answer as requested by the euler project problem """
     pass
