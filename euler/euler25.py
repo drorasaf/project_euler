@@ -18,4 +18,4 @@ def fibonacci_digits(digits):
 def solution():
     """ Returns the answer as requested by the euler project problem """
     required_digits = 1000
-    fibonacci_digits(required_digits)
+    return fibonacci_digits(required_digits)
