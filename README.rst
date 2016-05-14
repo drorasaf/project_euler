@@ -3,9 +3,8 @@ Project euler
 
 .. image:: https://api.travis-ci.org/drorasaf/project_euler.svg?branch=master
         :target: https://travis-ci.org/drorasaf/project_euler
-
-.. image:: https://coveralls.io/repos/drorasaf/project_euler/badge.svg?branch=master
-        :target: https://coveralls.io/r/drorasaf/project_euler
+.. image:: https://coveralls.io/repos/github/drorasaf/project_euler/badge.svg?branch=master
+        :target: https://coveralls.io/github/drorasaf/project_euler?branch=master 
 
 solutions for https://projecteuler.net/
 
