@@ -13,7 +13,7 @@ before_install:
 # command to install dependencies
 install:
   - "conda install --yes python=$TRAVIS_PYTHON_VERSION numpy=1.10 scipy=0.17"
-  - "conda install nose"
+  - "conda install --yes nose"
   - "pip install nose-cov"
   - "pip install tissue"
   - "pip install primesieve"
